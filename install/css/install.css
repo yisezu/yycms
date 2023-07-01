@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*全局控制*/
+body{margin:0;padding:0;font-family:"微软雅黑",Arial,"宋体";font-size:12px;color:#333;}
+html,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,p{margin:0;padding:0;}
+input,select,textarea{vertical-align:middle;font-family:"微软雅黑",Arial,"宋体";font-size:12px;}img{border:0;}ul,li{list-style-type:none;}
+a{color:#333;text-decoration:none;}a:hover{text-decoration:underline;color:#333;}a:focus{outline:none;}
+a{transition-duration:300ms;}
+.hr_1,.hr_8,.hr_10{font-size:1px;line-height:1px;clear:both;overflow:hidden;}
+.hr_1{height:1px;}.hr_8{height:8px;}.hr_10{height:10px;}
+
+/*定义新型浏览器特性*/
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background:000}
+::-webkit-scrollbar-track-piece{background:#f6f6f6}
+::-webkit-scrollbar-thumb:vertical{background:#d0d0d0;}
+::-webkit-scrollbar-thumb:vertical:hover{background:#3B3B3B}
+::-webkit-scrollbar-corner:vertical{background:#535353}
+::-webkit-scrollbar-resizer:vertical{background:#FF6E00}
+
+input[type="text"]:focus,input[type="password"]:focus{border:none;outline:none;}
+/*头部区域*/
+.header { padding:25px 0px; text-align:center;color:white;background:#333;font-size:25px;}
+
+/*主要区域*/
+.mainBody{width: 80%;margin: 0px auto;}
+.mainBody .correct,.mainBody .error{padding-left:22px;}
+.mainBody .correct{background:url(../images/correctBg.png) no-repeat 0 center;color:green;}
+.mainBody .error{background:url(../images/errorBg.png) no-repeat 0 center;color:red;}
+
+.mainBody .text{line-height:24px;}
+.mainBody .text h3{font-size:14px;text-align:center;margin-bottom:10px;color:#333;}
+.mainBody .text h4{font-size:12px;margin:10px 0 5px 0;color:#333;}
+
+.mainBody .forms .head{font-weight:bold;font-size:14px;}
+.mainBody .forms .firstCol{padding-left:5px;}
+.mainBody .forms .endCol{padding-right:5px;text-align:right;}
+
+.mainBody .table .title{font-weight:bold;font-size:14px;}
+.mainBody .table .input{width:280px;height:24px;line-height:24px;margin:1px;border:1px solid #ccc;padding:0 3px;}
+.mainBody .table .inputOn{width:280px;height:24px;line-height:24px;padding:2px 5px;background:url(../images/inputOnBg.png) no-repeat 0 center;border:0;}
+.mainBody .table .cnote{margin-left:20px;color:#999;}
+
+.mainBody .note{width:400px;margin:80px auto 0;}
+.mainBody .note .complete,.mainBody .note .already{width:400px;padding:90px 0 0 95px;line-height:22px;}
+.mainBody .note .complete{background:url(../images/complete.png) no-repeat;}
+.mainBody .note .already{background:url(../images/already.png) no-repeat;}
+.mainBody .note span{color:#999;padding:0 5px;}
+.mainBody .note a{text-decoration:underline;}
+.mainBody .note a:hover{text-decoration:none;}
+.mainBody .note a.link{text-decoration:none;}
+.mainBody .note a.link:hover{text-decoration:underline;}
+/* Installation is complete
+-------------------------------------- */
+.final-succeed { width: 900px; height: 85px; margin: 10px auto 0 auto; position: relative; z-index: 1;}
+.final-succeed span.ico { background: url(../images/install_bg.png) no-repeat 0 -60px; width: 96px; height: 85px; position: absolute; z-index: 1; top: 0; right: 60%;}
+.final-succeed h2 { font-size: 32px; font-weight: 600; line-height: 36px; text-align: left; width: 50%; height: 36px; position: absolute; z-index: 1; top: 10px; left: 42%;}
+.final-succeed h5 { font-size: 14px; line-height: 20px; color: #BEC3C6; text-align: left; width: 50%; height: 20px; position: absolute; z-index: 1; bottom: 5px; left: 42%;}
+.final-site-nav { background-color: #ECF0F1; width: 100%; margin: 50px auto; position: relative; z-index: 2;}
+.final-site-nav .arrow { font-size: 0; line-height: 0; width: 0; height: 0;   border-style: dashed dashed solid dashed; border-width: 10px; border-color: transparent transparent #ECF0F1 transparent; position: absolute; z-index: 1; top: -20px; right: 50%;}
+.final-site-nav ul { width: 400px; height: 210px; margin: 0 auto;}
+.final-site-nav ul li { width: 200px; float: left;}
+.final-site-nav ul li .ico { background: url(../images/install_bg.png) no-repeat; width: 110px; height: 110px; margin: 20px auto 0 auto;}
+.final-site-nav ul li.cms .ico { background-position: 0 -160px;}
+.final-site-nav ul li.shop .ico { background-position: -110px -160px;}
+.final-site-nav ul li.circle .ico { background-position: -220px -160px;}
+.final-site-nav ul li.microshop .ico { background-position: -330px -160px;}
+.final-site-nav ul li.admin .ico { background-position: -440px -160px;}
+.final-site-nav ul li h5 { font-size: 14px; font-weight: 600; line-height: 24px; text-align: center; margin-top: 10px;}
+.final-site-nav ul li h6 { font-size: 12px; line-height: 20px; text-align: center;}
+.final-intro { width: 900px; margin: 0 auto;}
+.final-intro p { font-size: 14px; margin-left: 300px;}
+.final-intro p em { font-size: 12px; color: #BEC3C6;}
+.content-box { width: 900px; margin: 0 auto;}
+.content-box table { width: 100%; margin: 20px 0;}
+.content-box table caption { font-size: 18px; line-height: 24px; color: #7E8C8D; text-align: left; padding: 5px 1%;}
+.content-box table th[scope="col"] { font-size: 14px; line-height: 24px; color: #FFF; background-color: #111; text-align: left; height: 20px; padding: 7px 1%;}
+.content-box table th[scope="row"] { line-height: 20px; background-color: #ECF0F1; text-align: left; height: 20px; padding: 5px 1%;}
+.content-box table th[scope="col"]:first-of-type { border-radius: 5px 0 0 0;}
+.content-box table th[scope="col"]:last-of-type { border-radius: 0 5px 0 0;}
+.content-box table tr:last-of-type th[scope="row"]:last-of-type { border-radius: 0 0 0 5px;}
+.content-box table td { line-height: 20px; background-color: #F5F7F8; height: 20px; padding: 5px 1%;}
+.content-box table tr:last-of-type td:last-of-type { border-radius: 0 0 5px 0;}
+.content-box table tr:last-of-type td:nth-last-child(3) { border-radius: 0 0 0 5px;}
+.content-box table td span { line-height: 20px; display: block; height: 20px;}
+.content-box table td span i { background: url(../images/install_bg.png) no-repeat; vertical-align: middle; display: inline-block; width: 16px; height: 16px; margin-right: 6px;}
+.content-box table td span.yes i { background-position: 0 -30px;}
+.content-box table td span.no i { background-position: -16px -30px;}
+.content-box table td span.no { color: #F33;}
+/* Fill the form
+-------------------------------------- */
+/*页脚区域*/
+.footer{width:100%;height:50px;border-top:3px solid #f0f0f0;background:#fff;position:fixed;left:0;bottom:0;_position:absolute;}
+
+.footer .step,.footer .step2,.footer .step3,.footer .step4,.footer .step5{display:block;height:3px;position:absolute;left:0;bottom:50px;background:#00aeef;overflow:hidden;z-index:999;}
+.footer .step{width:25%;}
+.footer .step2{width:50%;}
+.footer .step3{width:75%;}
+.footer .step4{width:100%;}
+.footer .step5{width:100%;}
+
+.footer .copyright{float:left;padding-left:10px;line-height:50px;font-family:Verdana;}
+
+.footer .formSubBtn{width:200px;float:right;margin-top:10px;padding-right:20px;text-align:right;}
+.footer .formSubBtn .submit,.formSubBtn .back{display:inline-block;width:78px;height:28px;line-height:28px;text-align:center;font-family:"微软雅黑";font-size:14px;}
+.footer .formSubBtn .submit{background:#3d566d;border:1px solid #3d566d;color:#fff;}
+.footer .formSubBtn .submit:hover{background:#4f6880;text-decoration:none;}
+.footer .formSubBtn .back{margin-right:10px;background:#fff;border:1px solid #999;color:#666;}
+.footer .formSubBtn .back:hover{border:1px solid #666;text-decoration:none;}

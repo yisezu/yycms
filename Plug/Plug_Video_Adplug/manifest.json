@@ -1,0 +1,8 @@
+{
+	"appid":"VideoAd",
+	"appname":"播放器广告插件",
+	"description": "播放器前随机插播视频广告,以及暂停图片广告",
+	"author": "佚名",
+	"version": "1.3",
+	"site":"https://www.zxyycms.com/"
+}
